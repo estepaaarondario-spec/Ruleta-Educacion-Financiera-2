@@ -1,0 +1,229 @@
+* { box-sizing: border-box; }
+
+:root {
+    --lapiz: #14307A;      /* lapislázuli */
+    --noche: #0A1A45;
+    --oro: #E3B63F;
+    --oro-osc: #9A7014;
+    --arcilla: #F1E2BF;    /* tablilla de arcilla */
+    --tinta: #3B2A14;
+    --ok: #2F7D4F;
+    --mal: #A8321F;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    color: #4A2C0A;
+    min-height: 100vh;
+    /* mapa antiguo de Mesopotamia (SVG incrustado) */
+    background:
+        radial-gradient(ellipse at center, transparent 50%, rgba(60,30,5,0.5) 100%),
+        url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 1200 800%22 preserveAspectRatio=%22xMidYMid slice%22%3E%3Cdefs%3E%3CradialGradient id=%22p%22 cx=%2250%25%22 cy=%2245%25%22 r=%2275%25%22%3E%3Cstop offset=%220%22 stop-color=%22%23F6E8C0%22/%3E%3Cstop offset=%22.7%22 stop-color=%22%23E4C98F%22/%3E%3Cstop offset=%221%22 stop-color=%22%23C89F5C%22/%3E%3C/radialGradient%3E%3Cfilter id=%22g%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%22.9%22 numOctaves=%222%22 seed=%223%22/%3E%3CfeColorMatrix values=%220 0 0 0 .35  0 0 0 0 .22  0 0 0 0 .08  0 0 0 .22 0%22/%3E%3C/filter%3E%3Cfilter id=%22m%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%22.012%22 numOctaves=%223%22 seed=%228%22/%3E%3CfeColorMatrix values=%220 0 0 0 .45  0 0 0 0 .27  0 0 0 0 .08  0 0 0 .55 -.12%22/%3E%3C/filter%3E%3C/defs%3E%3Crect width=%221200%22 height=%22800%22 fill=%22url(%23p)%22/%3E%3Crect width=%221200%22 height=%22800%22 filter=%22url(%23m)%22/%3E%3Crect width=%221200%22 height=%22800%22 filter=%22url(%23g)%22/%3E%3Cg stroke=%22%238B6A3A%22 stroke-opacity=%22.25%22 stroke-width=%221%22 fill=%22none%22%3E%3Cpath d=%22M0 200H1200M0 400H1200M0 600H1200M300 0V800M600 0V800M900 0V800%22/%3E%3C/g%3E%3Cpath d=%22M690 800V690C760 675 860 635 960 700C1040 745 1100 765 1200 740V800Z%22 fill=%22%237FA39B%22 fill-opacity=%22.5%22 stroke=%22%234A6F6A%22 stroke-width=%222%22/%3E%3Cg fill=%22none%22 stroke=%22%233F6F8A%22 stroke-width=%225%22 stroke-linecap=%22round%22 stroke-opacity=%22.75%22%3E%3Cpath d=%22M560 40C640 170 540 260 640 360S780 520 745 680%22/%3E%3Cpath d=%22M290 70C380 190 290 300 415 385S640 530 735 680%22/%3E%3C/g%3E%3Cg fill=%22none%22 stroke=%22%235A3A12%22 stroke-width=%222.5%22 stroke-opacity=%22.8%22 stroke-linecap=%22round%22%3E%3Cpath d=%22M880 90 l18 -30 l18 30 M898 60 l6 12%22 /%3E%3Cpath d=%22M920 110 l23.400000000000002 -39.0 l23.400000000000002 39.0 M943.4 71.0 l7.800000000000001 15.600000000000001%22 /%3E%3Cpath d=%22M970 85 l18 -30 l18 30 M988 55 l6 12%22 /%3E%3Cpath d=%22M1010 115 l21.599999999999998 -36.0 l21.599999999999998 36.0 M1031.6 79.0 l7.199999999999999 14.399999999999999%22 /%3E%3Cpath d=%22M850 130 l16.2 -27.0 l16.2 27.0 M866.2 103.0 l5.4 10.8%22 /%3E%3Cpath d=%22M1060 95 l16.2 -27.0 l16.2 27.0 M1076.2 68.0 l5.4 10.8%22 /%3E%3Cpath d=%22M930 150 l14.4 -24.0 l14.4 24.0 M944.4 126.0 l4.800000000000001 9.600000000000001%22 /%3E%3C/g%3E%3Cg fill=%22none%22 stroke=%22%238C2F1B%22 stroke-width=%223%22 stroke-dasharray=%223 9%22 stroke-linecap=%22round%22%3E%3Cpath d=%22M430 385Q500 260 600 150%22/%3E%3Cpath d=%22M430 385Q600 470 700 600%22/%3E%3Cpath d=%22M430 385Q300 450 190 560%22/%3E%3C/g%3E%3Cg fill=%22%238C2F1B%22%3E%3Ccircle cx=%22430%22 cy=%22385%22 r=%229%22/%3E%3Ccircle cx=%22600%22 cy=%22150%22 r=%226%22/%3E%3Ccircle cx=%22700%22 cy=%22600%22 r=%226%22/%3E%3Ccircle cx=%22190%22 cy=%22560%22 r=%226%22/%3E%3C/g%3E%3Cg font-family=%22Georgia, 'Times New Roman', serif%22 fill=%22%234A2C0A%22%3E%3Ctext x=%22395%22 y=%22425%22 font-size=%2230%22 font-weight=%22bold%22 letter-spacing=%224%22%3EBABILONIA%3C/text%3E%3Ctext x=%22615%22 y=%22150%22 font-size=%2220%22 font-style=%22italic%22%3EN%C3%ADnive%3C/text%3E%3Ctext x=%22715%22 y=%22607%22 font-size=%2220%22 font-style=%22italic%22%3EUr%3C/text%3E%3Ctext x=%22120%22 y=%22585%22 font-size=%2220%22 font-style=%22italic%22%3ESiria%3C/text%3E%3Ctext x=%22300%22 y=%22130%22 font-size=%2220%22 font-style=%22italic%22 fill=%22%232F5A73%22 transform=%22rotate(62 300 130)%22%3E%C3%89ufrates%3C/text%3E%3Ctext x=%22590%22 y=%22110%22 font-size=%2220%22 font-style=%22italic%22 fill=%22%232F5A73%22 transform=%22rotate(62 590 110)%22%3ETigris%3C/text%3E%3Ctext x=%22880%22 y=%22215%22 font-size=%2218%22 font-style=%22italic%22%3EMontes Zagros%3C/text%3E%3Ctext x=%22820%22 y=%22770%22 font-size=%2222%22 font-style=%22italic%22 fill=%22%232F4F4A%22%3EGolfo P%C3%A9rsico%3C/text%3E%3Ctext x=%2270%22 y=%22110%22 font-size=%2217%22 font-style=%22italic%22 opacity=%22.8%22%3EMesopotamia %C2%B7 Tierra entre dos r%C3%ADos%3C/text%3E%3C/g%3E%3Cg transform=%22translate(1040 560)%22 stroke=%22%234A2C0A%22 fill=%22none%22 stroke-width=%222%22%3E%3Ccircle r=%2262%22/%3E%3Ccircle r=%2248%22 stroke-opacity=%22.5%22/%3E%3Cpath d=%22M0 -62L12 -12L62 0L12 12L0 62L-12 12L-62 0L-12 -12Z%22 fill=%22%23B8741A%22 fill-opacity=%22.55%22/%3E%3Cpath d=%22M0 -40L5 -5L40 0L5 5L0 40L-5 5L-40 0L-5 -5Z%22 fill=%22%238C2F1B%22 fill-opacity=%22.6%22/%3E%3Ctext y=%22-70%22 text-anchor=%22middle%22 font-family=%22Georgia,serif%22 font-size=%2222%22 fill=%22%234A2C0A%22 stroke=%22none%22 font-weight=%22bold%22%3EN%3C/text%3E%3C/g%3E%3Crect x=%2218%22 y=%2218%22 width=%221164%22 height=%22764%22 fill=%22none%22 stroke=%22%234A2C0A%22 stroke-width=%224%22/%3E%3Crect x=%2230%22 y=%2230%22 width=%221140%22 height=%22740%22 fill=%22none%22 stroke=%22%234A2C0A%22 stroke-width=%221.5%22/%3E%3C/svg%3E") center / cover no-repeat;
+    background-color: #D9BC82;
+    background-attachment: fixed;
+}
+
+/* Franja decorativa superior */
+body::before {
+    content: "";
+    display: block;
+    height: 18px;
+    background:
+        repeating-linear-gradient(90deg, var(--oro) 0 14px, var(--oro-osc) 14px 18px, var(--lapiz) 18px 32px, var(--oro-osc) 32px 36px);
+    border-bottom: 3px solid var(--oro);
+}
+
+.contenedor {
+    width: 92%;
+    max-width: 900px;
+    margin: auto;
+    padding: 30px 10px;
+    text-align: center;
+}
+
+h1, h2, h3, .boton-girar, .categoria, .sector, .centro, .marcador {
+    font-family: "Cinzel", Georgia, serif;
+}
+
+h1 {
+    font-family: "Cinzel Decorative", "Cinzel", Georgia, serif;
+    font-size: clamp(28px, 6.5vw, 44px);
+    margin: 0 0 6px;
+    color: #4A2C0A;
+    text-shadow: 0 2px 0 rgba(255,240,200,0.85), 0 4px 12px rgba(255,235,180,0.7);
+}
+h2 { margin: 0; font-size: clamp(16px, 3.5vw, 22px); font-weight: 500; letter-spacing: 1px; }
+.subtitulo { color: #6B3A10; font-style: italic; font-weight: bold; }
+
+/* MARCADOR: bolsa de monedas */
+.marcador {
+    color: #FFF4D6;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px 40px;
+    background: rgba(10,26,69,0.65);
+    border: 2px solid var(--oro);
+    padding: 14px;
+    border-radius: 12px;
+    margin: 25px 0;
+    font-weight: 700;
+}
+.marcador strong { color: var(--oro); }
+
+/* RULETA */
+.zona-ruleta { position: relative; width: 380px; height: 410px; margin: auto; }
+
+/* ESTUCHE DE BRÚJULA: aro de bronce fijo alrededor de la ruleta */
+.zona-ruleta::before, .zona-ruleta::after {
+    content: "";
+    position: absolute; left: -5px; top: 15px;
+    width: 390px; height: 390px;
+    border-radius: 50%;
+    pointer-events: none;
+}
+.zona-ruleta::before {
+    background: conic-gradient(#F3CF6B, #9A7014, #F8DE8E, #7A560E, #F3CF6B, #9A7014, #F8DE8E, #7A560E, #F3CF6B);
+    -webkit-mask: radial-gradient(closest-side, transparent calc(100% - 40px), #000 calc(100% - 39px));
+            mask: radial-gradient(closest-side, transparent calc(100% - 40px), #000 calc(100% - 39px));
+    filter: drop-shadow(0 8px 14px rgba(40,20,0,0.55));
+}
+/* Marcas de grados sobre el aro (más gruesas cada 45°) */
+.zona-ruleta::after {
+    background:
+        repeating-conic-gradient(from -1.2deg, #2A1A08 0 2.4deg, transparent 2.4deg 45deg),
+        repeating-conic-gradient(from -0.5deg, #3B2A14 0 1deg, transparent 1deg 5deg);
+    -webkit-mask: radial-gradient(closest-side, transparent calc(100% - 15px), #000 calc(100% - 14px), #000 calc(100% - 3px), transparent calc(100% - 2px));
+            mask: radial-gradient(closest-side, transparent calc(100% - 15px), #000 calc(100% - 14px), #000 calc(100% - 3px), transparent calc(100% - 2px));
+}
+
+/* Puntos cardinales (el norte lo marca la flecha roja) */
+.cardinales span {
+    position: absolute; z-index: 2;
+    font-family: "Cinzel", Georgia, serif; font-weight: 700; font-size: 15px;
+    color: #2A1A08; text-shadow: 0 1px 0 rgba(255,240,200,0.7);
+}
+.c-e { right: 13px; top: 203px; }
+.c-s { left: 50%; bottom: 20px; transform: translateX(-50%); }
+.c-o { left: 13px; top: 203px; }
+
+.flecha {
+    position: absolute; top: 14px; left: 50%;
+    transform: translateX(-50%);
+    font-size: 45px; color: #B3261E;
+    text-shadow: 0 0 6px rgba(255,235,180,0.9), 0 2px 0 #5A1510;
+    z-index: 10;
+}
+
+.ruleta {
+    position: absolute; left: 30px; bottom: 30px;
+    width: 320px; height: 320px;
+    border-radius: 50%;
+    border: 9px solid var(--oro);
+    box-shadow: 0 0 0 4px var(--oro-osc), inset 0 0 0 3px rgba(42,26,8,0.55), inset 0 0 45px rgba(40,20,0,0.45);
+    transition: transform 4s cubic-bezier(.17,.67,.12,.99);
+}
+
+.sector {
+    position: absolute; top: 50%; left: 50%;
+    width: 84px; text-align: center;
+    font-size: 11px; font-weight: 700; line-height: 1.15;
+    color: #FFF4D6;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+}
+.sector span { display: block; font-size: 26px; }
+
+.centro {
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px; height: 100px;
+    background: radial-gradient(circle, var(--lapiz), var(--noche));
+    border: 6px solid var(--oro);
+    border-radius: 50%;
+    display: flex; justify-content: center; align-items: center;
+    font-weight: 700; font-size: 12px; letter-spacing: 1px;
+    color: var(--oro);
+    box-shadow: 0 0 15px #000;
+}
+
+/* Rosa de los vientos detrás del centro */
+.centro::before, .centro::after {
+    content: "";
+    position: absolute; z-index: -1;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(135deg, #F8DE8E, #9A7014);
+    filter: drop-shadow(0 0 2px #2A1A08);
+}
+.centro::before { width: 190px; height: 190px;
+    clip-path: polygon(50% 0, 57% 43%, 100% 50%, 57% 57%, 50% 100%, 43% 57%, 0 50%, 43% 43%); }
+.centro::after { width: 130px; height: 130px; transform: translate(-50%, -50%) rotate(45deg);
+    background: linear-gradient(135deg, #C9684A, #8C2F1B);
+    clip-path: polygon(50% 0, 57% 43%, 100% 50%, 57% 57%, 50% 100%, 43% 57%, 0 50%, 43% 43%); }
+
+/* BOTONES: oro */
+.boton-girar {
+    background: linear-gradient(180deg, #F3CF6B, var(--oro) 50%, var(--oro-osc));
+    color: var(--tinta);
+    border: 2px solid #6B4C0C;
+    padding: 14px 34px;
+    font-size: 18px; font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 0 #6B4C0C;
+}
+.boton-girar:hover:not(:disabled) { transform: translateY(-2px) scale(1.05); box-shadow: 0 6px 0 #6B4C0C, 0 0 20px var(--oro); }
+.boton-girar:disabled { opacity: 0.5; cursor: not-allowed; }
+button:focus-visible { outline: 3px solid #fff; outline-offset: 2px; }
+
+/* TARJETA: tablilla de arcilla */
+.tarjeta {
+    background: var(--arcilla);
+    background-image: radial-gradient(rgba(139,90,30,0.12) 1px, transparent 1px);
+    background-size: 8px 8px;
+    color: var(--tinta);
+    margin: 35px auto;
+    padding: 25px;
+    border: 5px double #8C5A1E;
+    border-radius: 14px;
+    max-width: 650px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.55);
+}
+
+.categoria {
+    display: inline-block; color: #FFF4D6;
+    padding: 7px 18px; border-radius: 6px;
+    font-size: 14px; font-weight: 700;
+    border: 2px solid var(--oro);
+}
+
+.opciones { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 20px; }
+
+.opcion {
+    border: 2px solid #B98F4C;
+    padding: 14px;
+    border-radius: 8px;
+    background: #E8D29E;
+    color: var(--tinta);
+    font-family: Georgia, serif;
+    cursor: pointer; font-size: 16px;
+    transition: 0.2s;
+}
+.opcion:hover:not(:disabled) { background: #F6DF93; transform: scale(1.03); }
+.opcion:disabled { cursor: default; }
+.opcion.correcta { background: #CFE8C9; border-color: var(--ok); }
+.opcion.incorrecta { background: #F2C6BD; border-color: var(--mal); }
+
+.resultado { font-size: 18px; font-weight: bold; min-height: 25px; }
+.explicacion { font-size: 15px; font-style: italic; margin: 0; }
+
+.oculto { display: none; }
+
+footer { margin-top: 40px; font-size: 14px; color: #4A2C0A; font-weight: bold; }
+
+@media (max-width: 520px) {
+    .opciones { grid-template-columns: 1fr; }
+    .zona-ruleta { transform: scale(0.82); transform-origin: top center; margin: 0 0 -70px calc(50% - 190px); }
+}

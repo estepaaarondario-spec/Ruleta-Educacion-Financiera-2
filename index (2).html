@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruleta de Babilonia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cinzel:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <main class="contenedor">
+
+        <h1>🏺 Ruleta de Babilonia</h1>
+        <h2>Los secretos del hombre más rico de Babilonia</h2>
+        <p class="subtitulo">«Una parte de todo lo que ganes es tuya para conservar»</p>
+
+        <!-- MARCADOR -->
+        <section class="marcador">
+            <span>🪙 Monedas: <strong id="puntaje">0</strong></span>
+            <span>🎯 Respondidas: <strong id="contador">0</strong> / <strong id="total">0</strong></span>
+        </section>
+
+        <!-- RULETA: los sectores se generan desde script.js -->
+        <section class="zona-ruleta">
+            <div class="flecha">▼</div>
+            <div class="cardinales" aria-hidden="true"><span class="c-e">E</span><span class="c-s">S</span><span class="c-o">O</span></div>
+            <div id="ruleta" class="ruleta">
+                <div class="centro">BABILONIA</div>
+            </div>
+        </section>
+
+        <button id="botonGirar" class="boton-girar">🎡 GIRAR RULETA</button>
+
+        <!-- TARJETA DE PREGUNTA -->
+        <section id="tarjetaPregunta" class="tarjeta oculto">
+            <span id="categoria" class="categoria"></span>
+            <h3 id="tema"></h3>
+            <p id="pregunta"></p>
+            <div id="opciones" class="opciones"></div>
+            <p id="resultado" class="resultado" aria-live="polite"></p>
+            <p id="explicacion" class="explicacion"></p>
+        </section>
+
+        <!-- PANTALLA FINAL -->
+        <section id="final" class="tarjeta oculto">
+            <h3>📜 ¡La tablilla está completa!</h3>
+            <p id="mensajeFinal"></p>
+            <button id="botonReiniciar" class="boton-girar">🔄 JUGAR DE NUEVO</button>
+        </section>
+
+        <footer>
+            Inspirado en El hombre más rico de Babilonia • Basado en el Manual de Educación Financiera de Banco Nación • Laboratorio de Aplicaciones II • 2026
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
